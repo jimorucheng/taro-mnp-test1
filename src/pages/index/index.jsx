@@ -4,7 +4,7 @@ import { View, Text } from '@tarojs/components'
 import api from '../../utils/api'
 import './index.css'
 
-class Index extends Component {
+class Index extends React.Component {
     state = {
         msg: 'Hello World!',
         loading: true,
@@ -33,7 +33,7 @@ class Index extends Component {
         return (
             <View className='index'>
                 <Text>{this.state.msg}</Text>
-                <Text>Hello world!</Text>
+                <Text>Hello world!Hello world!</Text>
                 {/* <ThreadList
                     threads={threads}
                     loading={loading}

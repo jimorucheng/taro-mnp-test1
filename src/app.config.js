@@ -6,27 +6,27 @@ export default {
   ],
   tabBar: {
     list: [{
-      // 'iconPath': 'resource/latest.png',
-      // 'selectedIconPath': 'resource/lastest_on.png',
+      'iconPath': 'images/home.png',
+      'selectedIconPath': 'images/home_g.png',
        pagePath: 'pages/index/index',
        text: '首页'
     }, 
     {
-      // 'iconPath': 'resource/hotest.png',
-      // 'selectedIconPath': 'resource/hotest_on.png',
+      'iconPath': 'images/cart.png',
+      'selectedIconPath': 'images/cart_g.png',
        pagePath: 'pages/itpServe/index/index',
        text: '服务'
     }, 
     {
-      // 'iconPath': 'resource/node.png',
-      // 'selectedIconPath': 'resource/node_on.png',
+      'iconPath': 'images/my.png',
+      'selectedIconPath': 'images/my_g.png',
        pagePath: 'pages/my/index/index',
        text: '我的'
     }],
     'color': '#000',
-    'selectedColor': '#56abe4',
+    'selectedColor': '#FF3B30',
     'backgroundColor': '#fff',
-    'borderStyle': 'white'
+    'borderStyle': 'black'
   },
   window: {
     backgroundTextStyle: 'light',

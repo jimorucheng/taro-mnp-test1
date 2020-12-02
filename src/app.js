@@ -17,7 +17,7 @@ import './app.css'
     /**
      * 微信小程序appID，以wx开头
      */
-    appid: 'touristappid',
+    appid: 'wxa0cd19d7f0fc8c93',
   
     /**
      * 如果使用了小程序插件，需要设置为 true
