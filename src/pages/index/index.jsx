@@ -1,46 +1,45 @@
 import Taro from '@tarojs/taro'
-import React, { Component } from 'react'
-import { View, Text } from '@tarojs/components'
-import api from '../../utils/api'
+import React from 'react'
+import { View, Input } from '@tarojs/components'
 import './index.css'
 
-class Index extends React.Component {
+class MrLogin extends React.Component {
+
     state = {
-        msg: 'Hello World!',
-        loading: true,
-        threads: []
+        userName: '销售',          // 用户名
+        password: 'admin123',      // 密码    
     }
-    config = {
-        navigationBarTitleText: '首页'
+    // 获取用户名
+    bindUserName = (e) => {
+        console.log(e)
+        // this.setState({
+        //   userName
+        // })
     }
-    // async componentDidMount() {
-    //     try {
-    //         const res = await Taro.request({
-    //             url: apigetLatestTopic()
-    //         })
-    //         this.setState({
-    //             threads: res.data,
-    //             loading: false
-    //         })
-    //     } catch (error) {
-    //         Taro.showToast({
-    //             title: '载入远程数据错误'
-    //         })
-    //     }
-    // }
+
     render() {
-        const { loading, threads } = this.state
+        const { userName, password } = this.state
         return (
-            <View className='index'>
-                <Text>{this.state.msg}</Text>
-                <Text>Hello world!Hello world!</Text>
-                {/* <ThreadList
-                    threads={threads}
-                    loading={loading}
-                /> */}
+            <View class="mr_login_box">
+                <image src="../../../images/login/mr_login.png" class="mr_login_icon"></image>
+                <View class="login_title1">欢迎来到诺医荟</View>
+                <View class="login_title2">前沿进展、热门资讯、会议直播</View>
+                <View class="login_title2 login_title3">医生们都在用的学术资讯平台</View>
+                <View class="login_message_box">
+                    <View class="user_name">用户名</View>
+                    <View class="user_name_input_box">
+                        <Input type="text" value={userName} class="input_class" placeholder="请输入用户名" placeholder-class="user_name_placeholder_class" onInput={this.bindUserName.bind(this)} />
+                    </View>
+                    <View class="user_password">密码</View>
+                    <View class="user_name_input_box">
+                        <Input type="text" value={password} class="input_class" placeholder="请输入密码" placeholder-class="user_name_placeholder_class" onInput={this.bindPassword.bind(this)} />
+                    </View>
+                </View>
+                <View class="mr_login_btn" bindtap="ok">登录</View>
             </View>
         )
     }
+
 }
 
-export default Index
+export default MrLogin

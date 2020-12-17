@@ -1,0 +1,96 @@
+page {
+  background: #005EAB;
+}
+
+.mr_login_icon {
+  margin-left: 213rpx;
+  width: 325rpx;
+  height: 278rpx;
+}
+
+.login_title1 {
+  margin-top: 40rpx;
+  font-size: 48rpx;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 600;
+  color: #FFFFFF;
+  line-height: 67rpx;
+  width: 100%;
+  text-align: center;
+}
+
+.login_title2 {
+  margin-top: 20rpx;
+  font-size: 32rpx;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 60rpx;
+  width: 100%;
+  text-align: center;
+}
+
+.login_title3 {
+  margin-top: 0rpx;
+}
+
+.login_message_box {
+  margin-top: 40rpx;
+  margin-left: 40rpx;
+  width: 670rpx;
+  height: 440rpx;
+  background: #FFFFFF;
+  box-shadow: 0rpx 20rpx 20rpx 0rpx rgba(0, 0, 0, 0.05);
+  border-radius: 16rpx;
+  padding: 50rpx 40rpx 0 40rpx;
+  box-sizing: border-box;
+}
+
+.user_name {
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #666666;
+}
+
+.user_password {
+  margin-top: 40rpx;
+}
+
+.user_name_input_box {
+  width: 590rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 32rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #666666;
+  border-bottom: 1rpx solid #D6D6D6;
+}
+
+.user_name_placeholder_class {
+  font-size: 32rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #CCCCCC;
+}
+
+.input_class {
+  height: 90rpx;
+  line-height: 90rpx;
+}
+
+.mr_login_btn {
+  width: 560rpx;
+  height: 98rpx;
+  background: #10AAFF;
+  border-radius: 49rpx;
+  margin-left: 95rpx;
+  text-align: center;
+  line-height: 98rpx;
+  font-size: 36rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #FFFFFF;
+  margin-top: -49rpx;
+}

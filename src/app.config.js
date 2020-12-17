@@ -1,37 +1,46 @@
 export default {
   pages: [
     'pages/index/index',
-    'pages/itpServe/index/index',
+    'pages/disease/index/index',
+    'pages/product/index/index',
+    'pages/meeting/index/index',
     'pages/my/index/index',
   ],
   tabBar: {
-    list: [{
-      'iconPath': 'images/home.png',
-      'selectedIconPath': 'images/home_g.png',
-       pagePath: 'pages/index/index',
-       text: '首页'
-    }, 
-    {
-      'iconPath': 'images/cart.png',
-      'selectedIconPath': 'images/cart_g.png',
-       pagePath: 'pages/itpServe/index/index',
-       text: '服务'
-    }, 
-    {
-      'iconPath': 'images/my.png',
-      'selectedIconPath': 'images/my_g.png',
-       pagePath: 'pages/my/index/index',
-       text: '我的'
-    }],
-    'color': '#000',
-    'selectedColor': '#FF3B30',
-    'backgroundColor': '#fff',
-    'borderStyle': 'black'
+    "color": "#999999",
+    "selectedColor": "#005EAB",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "images/disease/disease_active.png",
+        "iconPath": "images/disease/disease_default.png",
+        "pagePath": "pages/disease/index/index",
+        "text": "疾病"
+      },
+      {
+        "selectedIconPath": "images/disease/product_active.png",
+        "iconPath": "images/disease/product_default.png",
+        "pagePath": "pages/product/index/index",
+        "text": "产品"
+      },
+      {
+        "selectedIconPath": "images/disease/meeting_active.png",
+        "iconPath": "images/disease/meeting_default.png",
+        "pagePath": "pages/meeting/index/index",
+        "text": "会议"
+      },
+      {
+        "selectedIconPath": "images/disease/my_active.png",
+        "iconPath": "images/disease/my_default.png",
+        "pagePath": "pages/my/index/index",
+        "text": "我的"
+      }
+    ] 
   },
   window: {
     backgroundTextStyle: 'light',
     navigationBarBackgroundColor: '#fff',
-    navigationBarTitleText: '小艾卫士',
+    navigationBarTitleText: '诺医荟',
     navigationBarTextStyle: 'black'
   }
 }
